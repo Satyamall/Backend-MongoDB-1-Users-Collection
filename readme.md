@@ -24,6 +24,7 @@ switched to db assignment
   acknowledged: true,
   insertedIds: { '0': ObjectId("61ffb574ea60414c44d94f54") }
 }
+![Screenshot (187)](https://user-images.githubusercontent.com/80479635/152680676-1256908f-ff27-40bb-abf9-640a903bbec5.png)
 
 # 5- show collections
 - show collections
@@ -40,6 +41,8 @@ users
     '8': ObjectId("61ffb6deea60414c44d94f5d")
   }
 }
+![Screenshot (188)](https://user-images.githubusercontent.com/80479635/152680702-66168701-7273-4bc5-9f2f-618282a30e2a.png)
+
 
 # 7- using find 
 - db.users.find()
@@ -135,6 +138,7 @@ users
     age: 24
   }
 ]
+![Screenshot (189)](https://user-images.githubusercontent.com/80479635/152680721-85d096f8-ee58-409c-b808-7988c138ab0a.png)
 
 # 8- db.users-findOne()
 - db.users.findOne({_id: ObjectId("61ffb6deea60414c44d94f5b")})
@@ -147,6 +151,7 @@ users
   ip_address: '241.178.68.81',
   age: 47
 }
+![Screenshot (190)](https://user-images.githubusercontent.com/80479635/152680730-4fd71852-7d68-4453-a63c-44076458a5ce.png)
 
 # 9- Update at least 3 documents using update and updateMany
 
@@ -170,6 +175,7 @@ users
   ip_address: '19.208.43.193',
   age: 35
 }
+![Screenshot (191)](https://user-images.githubusercontent.com/80479635/152680739-c13341b9-81b4-4513-b9af-5bdec042474b.png)
 
 # 10- updateMany()
 - db.users.updateMany({gender: "Male"},{$set: {gender: "female"}})    
@@ -274,6 +280,7 @@ users
     age: 24
   }
 ]
+![Screenshot (192)](https://user-images.githubusercontent.com/80479635/152680785-0388a50b-441f-4b2c-8189-514644f9910f.png)
 
 # 11- Delete documents using remove, remove that will remove just 1 document, deleteOne, deleteMany
 
@@ -349,6 +356,9 @@ users
   }
 ]
 
+![Screenshot (193)](https://user-images.githubusercontent.com/80479635/152680794-28f915df-7869-46ef-95d9-50a0b985892d.png)
+
+
 # deleteMany({})
 - db.users.deleteMany({gender: "female"})
 { acknowledged: true, deletedCount: 3 }
@@ -411,6 +421,7 @@ users
   }
 ]
 
+
 # 12- delete the database
 - db.dropDatabase()
 { ok: 1, dropped: 'assignment' }
@@ -419,6 +430,7 @@ users
 assignment> show collections
 
 assignment>
+![Screenshot (194)](https://user-images.githubusercontent.com/80479635/152680835-bc45b366-e80b-48ee-8220-64a75bfbcc43.png)
 
 - show dbs
 admin     41 kB
